@@ -118,20 +118,21 @@ Method : POST
 Deskripsi : Endpoint ini digunakan untuk login ke dalam aplikasi ToDoList dan mendapatkan token JWT.
 Request Body :
 
-````json
+```json
 {
   "username": "existinguser",
   "password": "existingpassword"
 }
+```
 
-Response        :
+Response :
 Sukses (Status Code: 200)
+
 ```json
-Copy code
 {
   "token": "jwt_token_here"
 }
-````
+```
 
 Gagal (Status Code: 401)
 
