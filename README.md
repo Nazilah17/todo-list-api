@@ -125,10 +125,10 @@ Request Body :
 }
 ```
 
+
 Response        :
 Sukses (Status Code: 200)
 ```json
-Copy code
 {
   "token": "jwt_token_here"
 }
