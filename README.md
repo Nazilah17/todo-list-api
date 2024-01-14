@@ -123,6 +123,7 @@ Request Body :
   "username": "existinguser",
   "password": "existingpassword"
 }
+```
 
 Response        :
 Sukses (Status Code: 200)
