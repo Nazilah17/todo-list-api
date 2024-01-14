@@ -4,9 +4,12 @@ const app = express();
 
 const userRoutes = require("./routes/auth");
 const todoRoutes = require("./routes/todos");
+const { authenticateToken } = require("./middlewares/middleware");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(authenticateToken);
 
 app.use("/auth", userRoutes);
 app.use("/todos", todoRoutes);

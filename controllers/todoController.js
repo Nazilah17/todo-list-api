@@ -8,7 +8,7 @@ const createTodo = async (req, res) => {
     const todo = await Todo.create({ title, description, userId });
     res.status(201).json(todo);
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: "Internal Server Error: Failed to create todo." });
   }
 };
 
@@ -19,7 +19,7 @@ const getAllTodos = async (req, res) => {
     const todos = await Todo.findAll({ where: { userId } });
     res.status(200).json(todos);
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: "Internal Server Error: Failed to retrieve todo." });
   }
 };
 
@@ -36,7 +36,7 @@ const getTodoDetail = async (req, res) => {
 
     res.status(200).json(todo);
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: "Internal Server Error: Failed to get todo details." });
   }
 };
 
@@ -54,7 +54,7 @@ const updateTodo = async (req, res) => {
 
     res.status(200).json({ message: "Todo updated successfully" });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: "Internal Server Error: Failed to update details." });
   }
 };
 
@@ -71,7 +71,7 @@ const deleteTodo = async (req, res) => {
 
     res.status(200).json({ message: "Todo deleted successfully" });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: "Internal Server Error: Failed to delete todo." });
   }
 };
 
@@ -82,7 +82,7 @@ const deleteAllTodos = async (req, res) => {
     await Todo.destroy({ where: { userId } });
     res.status(200).json({ message: "All todos deleted successfully" });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: "Internal Server Error: Failed to delete all todos." });
   }
 };
 
