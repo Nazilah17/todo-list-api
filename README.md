@@ -82,10 +82,10 @@ This API provides functionality for managing a ToDoList application. It is built
 
 ## Create user register
 
-Endpoint : /auth/register
-Method : POST
-Deskripsi : Endpoint ini digunakan untuk mendaftarkan pengguna baru ke dalam aplikasi ToDoList.
-Request Body :
+- Endpoint : /auth/register
+- Method : POST
+- Deskripsi : Endpoint ini digunakan untuk mendaftarkan pengguna baru ke dalam aplikasi ToDoList.
+- Request Body :
 
 ```json
 {
@@ -94,8 +94,8 @@ Request Body :
 }
 ```
 
-Response :
-Sukses (Status Code: 201)
+- Response :
+  Sukses (Status Code: 201)
 
 ```json
 {
@@ -113,10 +113,10 @@ Gagal (Status Code: 500)
 
 ## Login
 
-Endpoint : /auth/login
-Method : POST
-Deskripsi : Endpoint ini digunakan untuk login ke dalam aplikasi ToDoList dan mendapatkan token JWT.
-Request Body :
+- Endpoint : /auth/login
+- Method : POST
+- Deskripsi : Endpoint ini digunakan untuk login ke dalam aplikasi ToDoList dan mendapatkan token JWT.
+- Request Body :
 
 ```json
 {
@@ -125,8 +125,8 @@ Request Body :
 }
 ```
 
-Response :
-Sukses (Status Code: 200)
+- Response :
+  Sukses (Status Code: 200)
 
 ```json
 {
@@ -144,12 +144,12 @@ Gagal (Status Code: 401)
 
 ## Create Todo
 
-Endpoint : /todos
-Method : POST
-Deskripsi : Endpoint ini digunakan untuk membuat todo baru.
-Request Header
-Authorization : Bearer jwt_token_here
-Request Body :
+- Endpoint : /todos
+- Method : POST
+- Deskripsi : Endpoint ini digunakan untuk membuat todo baru.
+- Request Header
+  - Authorization : Bearer jwt_token_here
+- Request Body :
 
 ```json
 {
@@ -158,8 +158,8 @@ Request Body :
 }
 ```
 
-Response :
-Sukses (Status Code: 201)
+- Response :
+  Sukses (Status Code: 201)
 
 ```json
 {
@@ -183,13 +183,13 @@ Gagal (Status Code: 500)
 
 ## Get All Todos
 
-Endpoint : /todos
-Method : GET
-Deskripsi : Endpoint ini digunakan untuk mendapatkan semua todos yang dimiliki oleh pengguna.
-Request Header
-Authorization : Bearer jwt_token_here
-Response :
-Sukses (Status Code: 200)
+- Endpoint : /todos
+- Method : GET
+- Deskripsi : Endpoint ini digunakan untuk mendapatkan semua todos yang dimiliki oleh pengguna.
+- Request Header
+  - Authorization : Bearer jwt_token_here
+- Response :
+  Sukses (Status Code: 200)
 
 ```json
 [
@@ -216,13 +216,13 @@ Gagal (Status Code: 500)
 
 ## Get Todo Detail
 
-Endpoint : /todos/:id
-Method : GET
-Deskripsi : Endpoint ini digunakan untuk mendapatkan detail todo berdasarkan ID.
-Request Header
-Authorization : Bearer jwt_token_here
-Response :
-Sukses (Status Code: 200)
+- Endpoint : /todos/:id
+- Method : GET
+- Deskripsi : Endpoint ini digunakan untuk mendapatkan detail todo berdasarkan ID.
+- Request Header
+  - Authorization : Bearer jwt_token_here
+- Response :
+  Sukses (Status Code: 200)
 
 ```json
 {
@@ -246,12 +246,12 @@ Gagal (Status Code: 404)
 
 ## Update Todo
 
-Endpoint : /todos/:id
-Method : PUT
-Deskripsi : Endpoint ini digunakan untuk mengubah informasi todo berdasarkan ID.
-Request Header
-Authorization : Bearer jwt_token_here
-Request Body :
+- Endpoint : /todos/:id
+- Method : PUT
+- Deskripsi : Endpoint ini digunakan untuk mengubah informasi todo berdasarkan ID.
+- Request Header
+  - Authorization : Bearer jwt_token_here
+- Request Body :
 
 ```json
 {
@@ -260,8 +260,8 @@ Request Body :
 }
 ```
 
-Response :
-Sukses (Status Code: 200)
+- Response :
+  Sukses (Status Code: 200)
 
 ```json
 {
@@ -279,13 +279,13 @@ Gagal (Status Code: 404)
 
 ## Delete Todo
 
-Endpoint : /todos/:id
-Method : DELETE
-Deskripsi : Endpoint ini digunakan untuk menghapus todo berdasarkan ID.
-Request Header
-Authorization : Bearer jwt_token_here
-Response :
-Sukses (Status Code: 200)
+- Endpoint : /todos/:id
+- Method : DELETE
+- Deskripsi : Endpoint ini digunakan untuk menghapus todo berdasarkan ID.
+- Request Header
+  - Authorization : Bearer jwt_token_here
+- Response :
+  Sukses (Status Code: 200)
 
 ```json
 {
@@ -303,13 +303,13 @@ Gagal (Status Code: 404)
 
 ## Delete All Todos
 
-Endpoint : /todos
-Method : DELETE
-Deskripsi : Endpoint ini digunakan untuk menghapus semua todos yang dimiliki oleh pengguna.
-Request Header
-Authorization : Bearer jwt_token_here
-Response :
-Sukses (Status Code: 200)
+- Endpoint : /todos
+- Method : DELETE
+- Deskripsi : Endpoint ini digunakan untuk menghapus semua todos yang dimiliki oleh pengguna.
+- Request Header
+  - Authorization : Bearer jwt_token_here
+- Response :
+  Sukses (Status Code: 200)
 
 ```json
 {

@@ -9,7 +9,7 @@ const { authenticateToken } = require("./middlewares/middleware");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(authenticateToken);
+app.use("/todos", authenticateToken);
 
 app.use("/auth", userRoutes);
 app.use("/todos", todoRoutes);
