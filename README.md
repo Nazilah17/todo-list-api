@@ -246,7 +246,7 @@ Gagal (Status Code: 404)
 
 ## Update Todo
 
-- Endpoint : /todos/:id
+- Endpoint : /todos/id
 - Method : PUT
 - Deskripsi : Endpoint ini digunakan untuk mengubah informasi todo berdasarkan ID.
 - Request Header
@@ -279,7 +279,7 @@ Gagal (Status Code: 404)
 
 ## Delete Todo
 
-- Endpoint : /todos/:id
+- Endpoint : /todos/id
 - Method : DELETE
 - Deskripsi : Endpoint ini digunakan untuk menghapus todo berdasarkan ID.
 - Request Header
