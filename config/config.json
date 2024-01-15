@@ -3,7 +3,7 @@
     "username": "root",
     "password": "Menara17",
     "database": "todo_list",
-    "host": "l127.0.0.1",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
@@ -17,7 +17,7 @@
     "username": "root",
     "password": "Menara17",
     "database": "todo_list",
-    "host": "l127.0.0.1",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   }
 }
