@@ -1,10 +1,10 @@
 {
   "development": {
-    "username": "root",
+    "username": "freedb_Nazilah17",
     "password": "Menara17",
-    "database": "todo_list",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
+    "database": "freedb_todo-list-zilah",
+    "host": "sql.freedb.tech",
+    "dialect": "eFR#bBwZeVeTw@9",
     "port": 3306
   },
   "test": {
@@ -15,11 +15,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
+    "username": "reedb_Nazilah17",
     "password": "Menara17",
-    "database": "todo_list",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
+    "database": "freedb_todo-list-zilah",
+    "host": "sql.freedb.tech",
+    "dialect": "eFR#bBwZeVeTw@9",
     "port": 3306
   }
 }
