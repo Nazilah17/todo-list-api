@@ -2,21 +2,21 @@
   "development": {
     "username": "root",
     "password": "Menara17",
-    "database": "todo_list",
-    "host": "127.0.0.1",
+    "database": "todo_list_zilah",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "Menara17",
-    "database": "todo_list",
+    "password": null,
+    "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "Menara17",
-    "database": "todo_list",
+    "password": null,
+    "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }
