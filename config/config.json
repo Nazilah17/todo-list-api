@@ -1,24 +1,25 @@
 {
   "development": {
     "username": "freedb_Nazilah17",
-    "password": "Menara17",
-    "database": "todo_list",
-    "host": "127.0.0.1",
+    "password": "MeFR#bBwZeVeTw@9",
+    "database": "freedb_todo-list-zilah",
+    "host": "sql.freedb.tech",
     "dialect": "mysql",
     "port": 3306
   },
   "test": {
-    "username": "root",
-    "password": "Menara17",
-    "database": "todo_list",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "freedb_Nazilah17",
+    "password": "MeFR#bBwZeVeTw@9",
+    "database": "freedb_todo-list-zilah",
+    "host": "sql.freedb.tech",
+    "dialect": "mysql",
+    "port": 3306
   },
   "production": {
-    "username": "reedb_Nazilah17",
-    "password": "Menara17",
-    "database": "todo_list",
-    "host": "127.0.0.1",
+    "username": "freedb_Nazilah17",
+    "password": "MeFR#bBwZeVeTw@9",
+    "database": "freedb_todo-list-zilah",
+    "host": "sql.freedb.tech",
     "dialect": "mysql",
     "port": 3306
   }
