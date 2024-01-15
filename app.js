@@ -9,6 +9,13 @@ const { authenticateToken } = require("./middlewares/middleware");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get("/", (req, res) => {
+  res.json({
+    message: "Welcome to My ToDoList API",
+    version: "1.0.0",
+  });
+});
+
 app.use("/todos", authenticateToken);
 
 app.use("/auth", userRoutes);
