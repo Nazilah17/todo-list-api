@@ -216,7 +216,7 @@ Gagal (Status Code: 500)
 
 ## Get Todo Detail
 
-- Endpoint : /todos/:id
+- Endpoint : /todos/id
 - Method : GET
 - Deskripsi : Endpoint ini digunakan untuk mendapatkan detail todo berdasarkan ID.
 - Request Header
